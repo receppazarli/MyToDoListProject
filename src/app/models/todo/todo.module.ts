@@ -1,0 +1,30 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { TodoRoutingModule } from './todo-routing.module';
+import { TodoComponent } from './todo.component';
+
+
+@NgModule({
+  declarations: [
+    TodoComponent
+  ],
+  imports: [
+    CommonModule,
+    TodoRoutingModule
+  ]
+})
+
+export class TodoModule { }
+  export class Todo  {
+
+    id: number;
+    title: string;
+    completed: boolean;
+
+    constructor(id :number,title:string,completed: boolean = false) {
+      this.id = id;
+      this.title=title;
+      this.completed = completed;
+    }
+  }

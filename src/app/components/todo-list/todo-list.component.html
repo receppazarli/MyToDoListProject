@@ -1,0 +1,17 @@
+<div>
+  <h1 style="text-align: center" >Welcome My ToDoList Project</h1>
+</div><br><br>
+
+<div style="text-align: center" >
+  <input type="text" #todoTitle style="font-size: larger">
+  <button (click)="addTodo(todoTitle.value) " style="font-size: larger">Add Todo</button>
+</div>
+
+
+
+<ol >
+  <li *ngFor="let todo of todos" style="font-size: x-large"  >
+    {{ todo.title }}
+    <button (click)="deleteTodo(todo.id)" style="font-size: medium">Delete</button>
+  </li>
+</ol>

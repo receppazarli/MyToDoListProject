@@ -1,0 +1,57 @@
+/* Genel body stilleri */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Başlık stilini merkeze alır ve font büyüklüğünü ayarlar */
+h1 {
+  text-align: center;
+  font-size: 2em; /* Örneğin 24px */
+  color: #333; /* Koyu gri renk */
+  margin-bottom: 0.5em; /* Başlık altında boşluk */
+}
+
+/* Giriş ve buton stilleri */
+input[type="text"] {
+  font-size: 1.2em; /* Büyük font boyutu */
+  padding: 0.5em; /* İç boşluk */
+  margin-right: 0.5em; /* Sağında boşluk */
+}
+
+button {
+  font-size: 1.2em; /* Büyük font boyutu */
+  padding: 0.5em 1em; /* İç boşluk */
+  cursor: pointer; /* İmleçi pointer olarak ayarlar */
+  background-color: #5cb85c; /* Yeşil arka plan rengi */
+  color: white; /* Beyaz yazı rengi */
+  border: none; /* Kenarlık kaldırılır */
+  border-radius: 5px; /* Kenarları yuvarlatır */
+}
+
+button:hover {
+  background-color: #4cae4c; /* Hover durumunda arka plan rengini koyulaştırır */
+}
+
+/* Liste stilleri */
+//ol {
+//  padding-left: 0; /* Varsayılan padding'i kaldırır */
+//}
+
+li {
+  list-style-type: none; /* Liste öğesi stilini kaldırır */
+  margin: 0.5em 0; /* Liste öğeleri arasında boşluk */
+  font-size: 1.5em; /* Büyük font boyutu */
+
+}
+
+li button {
+  font-size: 1em; /* Daha küçük font boyutu */
+  margin-left: 1em; /* Solunda boşluk */
+  background-color: #d9534f; /* Kırmızı arka plan rengi */
+}
+
+li button:hover {
+  background-color: #c9302c; /* Hover durumunda arka plan rengini koyulaştırır */
+}
+
